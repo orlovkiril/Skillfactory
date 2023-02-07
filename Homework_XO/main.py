@@ -22,9 +22,7 @@ def game(field):
         choice = int(input("Введите номер клетки: "))
 
         if choice not in field:
-            print("Ошибка ввода! Повторите ввод.")
-        elif str(field[choice - 1]) in "X0":
-            print("Клетка занята! Повторите ввод.")
+            print("Клетки не существует, или она занята. Повторите ввод.")
         else:
             if counter % 2 == 0:
                 field[choice - 1] = "X"
